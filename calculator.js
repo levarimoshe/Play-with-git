@@ -22,6 +22,10 @@ function divide(a, b) {
   return a / b;
 }
 
+function power(base, exponent) {
+    return Math.pow(base, exponent);
+}
+
 // Main execution
 function main() {
   console.log("=== Simple Calculator ===");
@@ -36,4 +40,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { add, subtract, multiply, divide };
+module.exports = { add, subtract, multiply, divide, power };

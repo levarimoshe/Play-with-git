@@ -3,7 +3,7 @@
  * These tests run automatically in CI/CD pipeline
  */
 
-const { add, subtract, multiply, divide } = require("./calculator");
+const { add, subtract, multiply, divide, power } = require("./calculator");
 
 describe("Calculator", () => {
   describe("add", () => {
@@ -52,5 +52,22 @@ describe("Calculator", () => {
     test("throws error when dividing by zero", () => {
       expect(() => divide(10, 0)).toThrow("Cannot divide by zero");
     });
+  });
+
+  describe("power", () => {
+    test("raises a number to a power", () => {
+      expect(power(2, 3)).toBe(8);
+    });
+  });
+
+  test("raises a number to a power", () => {
+    expect(power(2, 3)).toBe(8);
+    expect(power(3, 2)).toBe(9);
+    expect(power(4, 0.5)).toBe(2);
+    expect(power(0, 10)).toBe(0);
+    expect(power(1, 100)).toBe(1);
+    expect(power(10, 1)).toBe(10);
+    expect(power(10, 0)).toBe(1);
+    expect(power(10, -1)).toBe(0.1);
   });
 });
