@@ -23,7 +23,7 @@ function divide(a, b) {
 }
 
 function power(base, exponent) {
-    return Math.pow(base, exponent);
+  return Math.pow(base, exponent);
 }
 
 // Main execution
