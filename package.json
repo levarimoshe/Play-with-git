@@ -1,0 +1,20 @@
+{
+  "name": "git-practice-project",
+  "version": "1.0.0",
+  "description": "Practice project for learning Git/GitHub workflows and CI/CD",
+  "main": "calculator.js",
+  "scripts": {
+    "start": "node calculator.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": ["git", "github", "practice", "ci-cd"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  }
+}
